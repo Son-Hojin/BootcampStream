@@ -38,7 +38,6 @@ def plot_advanced_sunspot_visualizations(df, sunactivity_col='SUNACTIVITY',
         xs = np.linspace(data.min(), data.max(), 200)
         density = gaussian_kde(data)
 
-        '''코드를 작성하시오'''
         axs[0, 1].hist(data, bins=30, density=True, alpha=0.6, color='gray', label='Histogram')
         axs[0, 1].plot(xs, density(xs), color='red', linewidth=2, label='Density')
     axs[0, 1].set_title("Distribution of Sunspot Activity")
@@ -51,7 +50,6 @@ def plot_advanced_sunspot_visualizations(df, sunactivity_col='SUNACTIVITY',
     try:
         df_20th = df.loc["1900":"2000"]
         if not df_20th.empty:
-            '''코드를 작성하시오'''
             axs[1, 0].boxplot(df_20th[sunactivity_col], vert=False)
 
     except:
