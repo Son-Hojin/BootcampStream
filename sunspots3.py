@@ -1,5 +1,4 @@
 # --------------------------------------------------
-# [4] 시각화한 내용을 Steamlit에 배포하세요.
 # 위에서 생성한 sunspots_for_prophet.csv를 다운로드 받아, 루트/data 아래에 넣어주세요.
 # --------------------------------------------------
 import streamlit as st
@@ -19,7 +18,7 @@ df = pd.read_csv('data/sunspots_for_prophet.csv')
 df['ds'] = pd.to_datetime(df['ds'])
 df['YEAR'] = pd.to_datetime(df['YEAR'], format="%Y")
 
-st.subheader("📄 데이터 미리보기")
+st.subheader("📄 불러온 데이터 미리보기")
 st.dataframe(df.head(), use_container_width = True,
              column_config = {
                  "YEAR": st.column_config.NumberColumn(
