@@ -29,11 +29,6 @@ def plot_advanced_sunspot_visualizations(df, sunactivity_col='SUNACTIVITY'):
 
     axs[0, 0].set_title("Sunspot Activity Over Time")
     axs[0, 0].set_xlabel("Year")
-    axs[0, 0].set_ylabel(sunactivity_col)
-    axs[0, 0].grid(True)
-
-    axs[0, 0].set_title("Sunspot Activity Over Time")
-    axs[0, 0].set_xlabel("Year")
     axs[0, 0].set_ylabel("Sunspot Count")
     axs[0, 0].grid(True)
 

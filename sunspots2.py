@@ -135,6 +135,7 @@ try:
 
     # 산점도 투명도 조절
 
+
     point_alpha = st.sidebar.slider(
         '산점도 투명도',
         min_value = 0.1,
